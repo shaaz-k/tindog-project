@@ -1,0 +1,291 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 12s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+/* In Features */
+ .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+/* In Testimonial */
+  .profile-img {
+    height: 100px;
+    border-radius: 50%;
+  }
+
+
+
+/* Write your code here */
+
+
+body{
+   padding: 0;
+   margin: 0;
+}
+
+.main-hero{
+    min-height: 646.33px;
+    width: 100vw;
+    /* position: fixed; */
+}
+
+.flexing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.flexing-container-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexing-container.inner-hero{
+    justify-content: space-evenly;
+    gap: 10%;
+    flex-direction: row-reverse;
+}
+
+.inner-hero img{
+    margin-top: 3vh;
+}
+
+.flexing-container.text-and-buttons{
+    gap: 5%;
+    /* max-width: 432px; */
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons-div{
+    margin-top: 5vh;
+}
+
+.buttons-div button{
+    min-width: 160px;
+}
+
+.good-font{
+    font-family: "Gantari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+    color: rgb(00, 00, 00, 0.80); 
+    font-size: 100%;
+}
+
+
+.navbar *{
+    color: white;
+}
+
+.navbar{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.flex-gap{
+    gap: 10%;
+}
+
+.card{
+    width: 100%;
+    max-width: 30vw;  /* Can turn this off */
+}
+
+
+
+.main-features{
+    margin-top: 2.5rem;
+}
+
+.profile-div{
+    gap: 3rem;
+    flex-direction: column;
+
+}
+
+.company-logos-div{
+    justify-content: space-evenly;
+    gap: 10%;
+}
+
+.company-logos-div img{
+    width: auto;
+    max-height: 30px;
+    height: 100%
+}
+
+.main-testimonial{
+    margin-bottom: 60px;
+}
+
+.card3 .card-header{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.border-primary{
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--bs-rgb), var(--bs-border-opacity)) !important;
+}
+
+.btn-primary, .btn-outline-primary{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+.main-pricing{
+    width: 100vw;
+    justify-content: space-evenly;
+    /* gap: 0; */
+    align-self: center;
+}
+
+
+.card-body .btn:hover {
+    /* color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color); */
+
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 8s ease infinite;
+}
+
+
+.left-bottom-space{
+    margin-left: 3vw;
+    margin-bottom: 3vh;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.space{
+    margin-top: 30px;
+}
+
+.main-footer *{
+    font-family: "Gantari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+    /* color: rgb(00, 00, 00, 0.80);  */
+    font-size: 100%;
+    color: white;
+    font-size: 16px;
+    /* color: #212529BF; */
+
+}
+
+.main-footer h5{
+    color: rgb(00, 00, 00, 0.80); 
+    font-size: large;
+
+}
+
+.main-footer *:hover{
+    color: rgb(00, 00, 00, 0.80); 
+}
+
+
+/* #remaining-space-occupy{
+    height: 100%;
+    display: none;
+} */
+
+
+*{
+    font-family: "Gantari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+    font-size: 100%;
+}
+
+#pricing{
+    padding-top: 3vh;
+}
+
+@media (max-width: 768px){
+    .flexing-container.inner-hero{
+        flex-direction: column;
+        gap: 10vh;
+        margin-top: 5vh;
+    }
+
+    .inner-hero img{
+        width: 50%;
+        height: auto;
+    }
+
+    .buttons-div{
+        flex-direction: column;
+        gap: 2vh;
+
+        margin-top: 3vh;
+        width: 100%;
+    }
+
+    .buttons-div button{
+        width: 100%;
+    }
+
+    span.navbar-toggle-item{
+        background-image: url("");
+    }
+
+    .company-logos-div{
+        flex-wrap: wrap;
+        gap: 20%;
+    }
+
+    .main-pricing{
+        display: block;
+    }
+
+    .card-border-style, .main-pricing div{
+        width: 100vw;
+    }
+
+    .card{
+        max-width: 100vw;
+        width: 100%;
+    }
+
+    .section-div{
+        padding-left: 4vw;
+    }
+
+    .tindog-name-footer{
+        padding-bottom: 4vh;
+    }
+}
